@@ -39,6 +39,7 @@
   "standard.enable": false,
   "markdown.extension.toc.levels": "2..6",
   "cSpell.words": [
-    "Pomodoro"
+    "Pomodoro",
+    "grpc"
   ]
 }
