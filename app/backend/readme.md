@@ -7,9 +7,11 @@ The examples below are for Windows, but corresponding steps also apply for other
 1. Install Go.
 2. Make sure PATH contains `C:\Go\bin`, assuming thats where Go was installed.
 3. Add a new environment variable called `GOROOT` with value `C:\Go`.
-4. Be sure to set `GOPATH` (user) environment variable variable (`G:\dev\go` as an example on Windows).
-5. GO projects will need to be under `G:\dev\go`, using the above example. Possibly under a folder called `_my-projects`, or some name of your choosing. Alternately, a different folder can also be used for personal Go projects.
-6. Add `G:\dev\go\bin` (using above example) to PATH.
+4. Be sure to set `GOPATH` (user) environment variable variable (`G:\dev\go` as an example on Windows). Now you have a few options.
+   1. Under `G:\dev\go`, Go will create a `src` and a `bin` directory.
+   2. You can put your projects under the `src` directory. The advantage of this approach is in using code internal to the same project. Go does not work very well with relative paths. This approach will help and is recommended. [This article](https://golang.org/doc/code.html#Organization) is useful reading.
+   3. Alternately, a different folder could be used, either under `src` or somewhere outside of `GOPATH` (i.e., `G:\dev\go`). In such a case, importing code from another file within the same project would require either using the [vendor](https://stackoverflow.com/a/45813698/420827) folder mechanism, or some other "non-standard" approach.
+5. Add `G:\dev\go\bin` (using above example) to PATH.
 
 ## Getting imported packages
 
