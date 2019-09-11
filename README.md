@@ -42,20 +42,20 @@ A Pomodoro timer with abstracted scalable architecture. **[work-in-progress]**
 
 ## Installation
 
-[./documentation/Product/install.md](./documentation/Product/install.md)
+[./documentation/product/install.md](./documentation/product/install.md)
 
 ## Usage
 
-[./documentation/Product/usage.md](./documentation/Product/usage.md)
+[./documentation/product/usage.md](./documentation/product/usage.md)
 
 ## Development
 
 | Document                | Link                                                                                                     |
 | ----------------------- | -------------------------------------------------------------------------------------------------------- |
-| Design and Architecture | [./documentation/Development/design-architecture.md](./documentation/Development/design-architecture.md) |
-| Requirements            | [./documentation/Development/requirements.md](./documentation/Development/requirements.md)               |
-| CI/CD                   | [./documentation/Development/ci-cd.md](./documentation/Development/ci-cd.md)                             |
-| Testing                 | [./documentation/Development/testing.md](./documentation/Development/testing.md)                         |
+| Design and Architecture | [./documentation/development/design-architecture.md](./documentation/development/design-architecture.md) |
+| Requirements            | [./documentation/development/requirements.md](./documentation/development/requirements.md)               |
+| CI/CD                   | [./documentation/development/ci-cd.md](./documentation/development/ci-cd.md)                             |
+| Testing                 | [./documentation/development/testing.md](./documentation/development/testing.md)                         |
 
 ### Contributing
 
