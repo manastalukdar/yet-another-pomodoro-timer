@@ -15,5 +15,6 @@
 # vendor/
 
 # Protocol Buffer generated files
-*/**/*.pb.go
+*/**/*.pb.*.go
+*/**/*.swagger.json
 

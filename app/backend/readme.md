@@ -34,9 +34,18 @@ For all non-native Go packages you have to do a `go get -u`. Check your source f
 4. Either of the following commands work, depending on where this project resides
 
     ```plaintext
-    C:\data\devgithub\go\src\github.com\manastalukdar\yet-another-pomodoro-timer>protoc -I %GOPATH%/src/github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api/ api.proto -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=plugins=grpc:./app/backend/api 
+    C:\data\devgithub\go\src\github.com\manastalukdar\yet-another-pomodoro-timer>protoc -I %GOPATH%/src/github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api/ api.proto -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=plugins=grpc:./app/backend/api
     ```
 
     ```plaintext
     C:\data\devgithub\_my-projects\yet-another-pomodoro-timer>protoc -I ./app/backend/api/ api.proto -I %GOPATH%/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis --go_out=plugins=grpc:./app/backend/api
     ```
+
+## Building
+
+```plaintext
+From root of: G:\dev\go\src\github.com\manastalukdar\yet-another-pomodoro-timer
+
+go build -i -v -o bin/app/backend/server.exe .\app\backend\server\
+go build -i -v -o bin/app/backend/client.exe .\app\backend\client\
+```
