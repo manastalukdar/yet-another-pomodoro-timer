@@ -4,6 +4,15 @@ The examples below are for Windows, but corresponding steps also apply for other
 
 ## Environment
 
+If you are on Windows, I highly recommend installing [msys2](http://www.msys2.org/). After installation, run the following from the msys2 shell:
+
+```plaintext
+pacman -Syu
+pacman -S base-devel
+pacman -S mingw-w64-x86_64-toolchain
+pacman -S mingw-w64-x86_64-cmake
+```
+
 1. Install Go.
 2. Make sure PATH contains `C:\Go\bin`, assuming `C:\Go` is where Go was installed.
 3. Add a new environment variable called `GOROOT` with value `C:\Go`.
