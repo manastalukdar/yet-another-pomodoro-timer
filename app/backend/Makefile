@@ -1,15 +1,14 @@
-SERVER_OUT := "../../bin/app/backend/server"
-CLIENT_OUT := "../../bin/app/backend/client"
+SERVER_OUT := "../../bin/app/backend/server.exe"
+CLIENT_OUT := "../../bin/app/backend/client.exe"
 API_OUT := "api/api.pb.go"
 API_REST_OUT := "api/api.pb.gw.go"
+API_SWAG_OUT := "api/api.swagger.json"
 PKG := "github.com/manastalukdar/yet-another-pomodoro-timer"
-SERVER_PKG_BUILD := "${PKG}/app/backend/server.exe"
-CLIENT_PKG_BUILD := "${PKG}/app/backend/client.exe"
+SERVER_PKG_BUILD := "${PKG}/app/backend/server"
+CLIENT_PKG_BUILD := "${PKG}/app/backend/client"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 
-.PHONY: all api server client
-
-all: server client
+all: api server client
 
 #protocPreReqs:
 #	@go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
@@ -49,7 +48,7 @@ client: dep api ## Build the binary file for client
 	@go build -i -v -o $(CLIENT_OUT) $(CLIENT_PKG_BUILD)
 
 clean: ## Remove previous builds
-	@rm $(SERVER_OUT) $(CLIENT_OUT) $(API_OUT) $(API_REST_OUT) $(API_SWAG_OUT)
+	@rm -f $(SERVER_OUT) $(CLIENT_OUT) $(API_OUT) $(API_REST_OUT) $(API_SWAG_OUT)
 
 help: ## Display this help screen
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
