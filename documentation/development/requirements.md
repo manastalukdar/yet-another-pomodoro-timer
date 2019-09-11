@@ -5,12 +5,18 @@
    2. [Getting imported packages](#getting-imported-packages)
    3. [Steps to get protobuf compilation working](#steps-to-get-protobuf-compilation-working)
    4. [Building](#building)
+   5. [Upgrading to newer versions of development environments](#upgrading-to-newer-versions-of-development-environments)
 2. [CLI](#cli)
 3. [Frontend](#frontend)
 
 ## Backend
 
 The examples below are for Windows, but corresponding steps also apply for other operating systems.
+
+| Language | Version | Package |
+| -------- | ------- | ------- |
+
+It is highly recommended to use [VS Code](https://code.visualstudio.com/).
 
 ### Environment
 
@@ -68,6 +74,8 @@ From root of: G:\dev\go\src\github.com\manastalukdar\yet-another-pomodoro-timer
 go build -i -v -o bin/app/backend/server.exe .\app\backend\server\
 go build -i -v -o bin/app/backend/client.exe .\app\backend\client\
 ```
+
+### Upgrading to newer versions of development environments
 
 ## CLI
 
