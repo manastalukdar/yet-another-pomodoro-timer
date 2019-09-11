@@ -1,5 +1,13 @@
 # CI, CD
 
+1. [Current Status](#current-status)
+2. [Methodology](#methodology)
+   1. [Committing code](#committing-code)
+   2. [Versioning of packages/deliverables](#versioning-of-packagesdeliverables)
+   3. [Builds](#builds)
+   4. [Deployments](#deployments)
+   5. [Status badges](#status-badges)
+
 ## Current Status
 
 | Platform | Provider | Operations | Status |
