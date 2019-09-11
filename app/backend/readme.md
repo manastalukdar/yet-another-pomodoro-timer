@@ -19,8 +19,8 @@ For all non-native Go packages you have to do a `go get -u`. Check your source f
 
 ## Steps to get protobuf compilation working
 
-1. Get protocol buffers from: https://github.com/google/protobuf/releases.
-2. Add location of local `bin` folder under protobuf to PATH.
+1. Get protocol buffers from [here](https://github.com/google/protobuf/releases).
+2. Add location of local `bin` folder from under protobuf to PATH.
 3. Run following (for `google/api/annotations.proto`, imported in api/api.proto)
 
     ```plaintext
@@ -28,6 +28,8 @@ For all non-native Go packages you have to do a `go get -u`. Check your source f
     go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
     go get -u github.com/golang/protobuf/protoc-gen-go
     ```
+
+    For other imports you will have to run `go get -u` similarly.
 
 4. Either of the following commands work, depending on where this project resides
 
