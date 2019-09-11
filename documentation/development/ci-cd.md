@@ -1,21 +1,28 @@
 # CI, CD
 
+## Current Status
+
+| Platform | Provider | Operations | Status |
+| -------- | -------- | ---------- | ------ |
+
+## Methodology
+
 Implement CI-CD pipelines with the following functionality. Consider using GitHub actions.
 
-## Committing code
+### Committing code
 
 - Code should be pushed into `master` only by using PRs. Disable direct push functionality into `master`.
 - Disable PRs into `master` lacking reference to any issue.
 - Disable commits and PRs into `develop` lacking reference to any issue.
 
-## Versioning of packages/deliverables
+### Versioning of packages/deliverables
 
 Versioning of packages published by different branches:
 
 - `master` deploys stable production code. `latest` tag should be used for the corresponding npm package.
 - `develop` deploys under-development code. `next` tag should be used for the corresponding npm package.
 
-## Builds
+### Builds
 
 Automated builds should be triggered on:
 
@@ -23,7 +30,7 @@ Automated builds should be triggered on:
 - Creating new PR into `develop`.
 - Creating new PR into `master`.
 
-## Deployments
+### Deployments
 
 Automated deployments should be triggered on:
 
@@ -46,6 +53,6 @@ It is worth considering if steps 1, 2 and 3 above:
 - should be left as manual, or
 - should be automated but manual deployments should also be allowed.
 
-## Status badges
+### Status badges
 
 CI/CD status badges should be provided in the README.md file for builds and deployments from both `develop` and `master` branches.
