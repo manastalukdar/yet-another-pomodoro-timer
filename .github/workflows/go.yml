@@ -15,6 +15,9 @@ jobs:
 
     - name: Check out code into the Go module directory
       uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+        path: go/src/github.com/manastalukdar/yet-another-pomodoro-timer
 
     - name: Get dependencies
       run: |
@@ -29,6 +32,10 @@ jobs:
 
     - name: Get google/api/annotations.proto dependencies
       run: ./.github/workflows/get-api-deps.sh
+      env:
+        GOPATH: /home/runner/work/manastalukdar/go
 
     - name: Build
       run: make all #go build -v .
+      env:
+        GOPATH: /home/runner/work/manastalukdar/go

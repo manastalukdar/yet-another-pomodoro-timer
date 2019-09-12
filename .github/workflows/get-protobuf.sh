@@ -24,11 +24,11 @@ sudo mv protoc3/bin/* /usr/local/bin/
 # Move protoc3/include to /usr/local/include/
 sudo mv protoc3/include/* /usr/local/include/
 
-ln -s /protoc3/bin/protoc /usr/bin/protoc
-ln -s /usr/local/bin/protoc /usr/bin/proto
+sudo ln -s /protoc3/bin/protoc /usr/bin/protoc
+sudo ln -s /usr/local/bin/protoc /usr/bin/proto
 
 # Optional: change owner
-sudo chown [user] /usr/local/bin/protoc
-sudo chown -R [user] /usr/local/include/google
+# sudo chown [user] /usr/local/bin/protoc
+# sudo chown -R [user] /usr/local/include/google
 
 rm -rf $TEMP_DIR/protoc_inst
