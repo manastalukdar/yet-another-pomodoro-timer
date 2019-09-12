@@ -24,5 +24,8 @@ jobs:
             dep ensure
         fi
 
+    - name: Get Protocol Buffers
+      run: ./get-protocol.sh
+
     - name: Build
       run: go build -v .
