@@ -25,7 +25,7 @@ jobs:
         fi
 
     - name: Get Protocol Buffers
-      run: ./get-protocol.sh
+      run: ./get-protobuf.sh
 
     - name: Build
       run: make all #go build -v .
