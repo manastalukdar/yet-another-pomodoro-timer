@@ -27,5 +27,10 @@ jobs:
     - name: Get Protocol Buffers
       run: ./.github/workflows/get-protobuf.sh
 
+    - name: Get google/api/annotations.proto dependencies
+      run: go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
+      run: go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger
+      run: go get -u github.com/golang/protobuf/protoc-gen-go
+
     - name: Build
       run: make all #go build -v .
