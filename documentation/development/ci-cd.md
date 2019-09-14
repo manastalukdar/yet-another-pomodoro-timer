@@ -10,8 +10,9 @@
 
 ## Current Status
 
-| Platform | Provider | Operations | Status |
-| -------- | -------- | ---------- | ------ |
+| Platform | Provider | Operations                      | Status                                                                                                                                                                               |
+| -------- | -------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Linux    | GitHub   | Build, Test, Deploy to gh-pages | [![Actions Status](https://github.com/manastalukdar/yet-another-pomodoro-timer/workflows/build-test/badge.svg)](https://github.com/manastalukdar/yet-another-pomodoro-timer/actions) |
 
 ## Methodology
 
