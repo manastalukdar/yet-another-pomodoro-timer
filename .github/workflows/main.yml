@@ -26,10 +26,10 @@ jobs:
           fi
 
       - name: Get Protocol Buffers
-        run: ../../scripts/get-protobuf.sh
+        run: /scripts/get-protobuf.sh
 
       - name: Get google/api/annotations.proto dependencies
-        run: ../../scripts/get-api-deps.sh
+        run: /scripts/get-api-deps.sh
         env:
           GOPATH: /home/runner/work/manastalukdar/go
 
