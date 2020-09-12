@@ -24,7 +24,7 @@ jobs:
           pwd
           echo ${HOME}
           echo ${GITHUB_WORKSPACE}
-          echo ${GOPATH}
+          echo $GOPATH
           echo ${GOROOT}
 
       - name: Check out code into the Go module directory
