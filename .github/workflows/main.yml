@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 1
-          path: $GOPATH/src/github.com/${{ github.repository }}
+          path: ${GOPATH}/src/github.com/${{ github.repository }}
 
       - name: Get dependencies
         run: |
@@ -35,17 +35,17 @@ jobs:
       - name: Get Protocol Buffers
         shell: bash
         run: |
-          cd $GOPATH/src/github.com/${{ github.repository }}
+          cd ${GOPATH}/src/github.com/${{ github.repository }}
           ./scripts/get-protobuf.sh
 
       - name: Get google/api/annotations.proto dependencies
         shell: bash
         run: |
-          cd $GOPATH/src/github.com/${{ github.repository }}
+          cd ${GOPATH}/src/github.com/${{ github.repository }}
           ./scripts/get-api-deps.sh
 
       - name: Build
         shell: bash
         run: |
-          cd $GOPATH/src/github.com/${{ github.repository }}
+          cd ${GOPATH}/src/github.com/${{ github.repository }}
           make all
