@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api"
+	"github.com/yet-another-pomodoro-timer/backend/src/api"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

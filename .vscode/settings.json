@@ -45,5 +45,8 @@
     "grpc",
     "proto",
     "yapt"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

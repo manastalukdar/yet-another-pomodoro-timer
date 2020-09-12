@@ -1,11 +1,11 @@
-SERVER_OUT := "../../bin/app/backend/server.exe"
-CLIENT_OUT := "../../bin/app/backend/client.exe"
+SERVER_OUT := "../bin/server.exe"
+CLIENT_OUT := "../bin/client.exe"
 API_OUT := "api/api.pb.go"
 API_REST_OUT := "api/api.pb.gw.go"
 API_SWAG_OUT := "api/api.swagger.json"
-PKG := "github.com/manastalukdar/yet-another-pomodoro-timer"
-SERVER_PKG_BUILD := "${PKG}/app/backend/server"
-CLIENT_PKG_BUILD := "${PKG}/app/backend/client"
+PKG := "github.com/yet-another-pomodoro-timer"
+SERVER_PKG_BUILD := "${PKG}/backend/src/server"
+CLIENT_PKG_BUILD := "${PKG}/backend/src/client"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 
 all: api server client
@@ -17,21 +17,21 @@ all: api server client
 
 api/api.pb.go: # protocPreReqs
 	@protoc -I api/ \
-		-I${GOPATH}/src/github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api/ \
+		-I${GOPATH}/src/github.com/yet-another-pomodoro-timer/backend/src/api/ \
 		api.proto \
 		-I${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
 		--go_out=plugins=grpc:api
 
 api/api.pb.gw.go: api/api.pb.go
 	@protoc -I api/ \
-		-I${GOPATH}/src/github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api/ \
+		-I${GOPATH}/src/github.com/yet-another-pomodoro-timer/backend/src/api/ \
 		api.proto \
 		-I${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
 		--grpc-gateway_out=logtostderr=true:api \
 
 api/api.swagger.json: api/api.proto
 	@protoc -I api/ \
-		-I${GOPATH}/src/github.com/manastalukdar/yet-another-pomodoro-timer/app/backend/api/ \
+		-I${GOPATH}/src/github.com/yet-another-pomodoro-timer/backend/src/api/ \
 		api.proto \
 		-I${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
 		--swagger_out=logtostderr=true:api \

@@ -1,5 +1,5 @@
 backend:
-	cd app/backend && $(MAKE) clean && $(MAKE) all
+	cd src && $(MAKE) clean && $(MAKE) all
 
 cli:
 	@echo WIP
