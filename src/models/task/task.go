@@ -15,5 +15,5 @@ type Task struct {
 
 // TimeRemaining function
 func (t Task) TimeRemaining() {
-	fmt.Printf("%s %s has %d leaves remaining\n", t.Name, (t.LongBreak - t.Break))
+	fmt.Printf("%s has %d leaves remaining\n", t.Name, (t.LongBreak - t.Break))
 }
