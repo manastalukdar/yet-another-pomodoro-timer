@@ -13,7 +13,8 @@
 
 A Pomodoro timer with abstracted scalable architecture. **[work-in-progress]**
 
-[![Actions Status](https://github.com/manastalukdar/yet-another-pomodoro-timer/workflows/build-test/badge.svg)](https://github.com/manastalukdar/yet-another-pomodoro-timer/actions)
+[![Actions Status](https://github.com/yet-another-pomodoro-timer/backend/workflows/build-test/badge.svg)](https://github.com/yet-another-pomodoro-timer/backend/actions)
+[![GitHub Super-Linter](https://github.com/yet-another-pomodoro-timer/backend/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 [More project metadata badges [here](./documentation/project/metadata.md). More CI/CD badges [here](./documentation/development/ci-cd.md#current-status).]
 
@@ -45,12 +46,12 @@ A Pomodoro timer with abstracted scalable architecture. **[work-in-progress]**
 
 ## Project Management
 
-[GitHub Projects](https://github.com/manastalukdar/yet-another-pomodoro-timer/projects)
+[GitHub Projects](https://github.com/yet-another-pomodoro-timer/backend/projects)
 
 ## Links
 
-- [Sourcegraph](https://sourcegraph.com/github.com/manastalukdar/yet-another-pomodoro-timer/)
+- [Sourcegraph](https://sourcegraph.com/github.com/yet-another-pomodoro-timer/backend/)
 
 ## License
 
-[MIT](https://github.com/manastalukdar/yet-another-pomodoro-timer/blob/master/LICENSE)
+[MIT](https://github.com/yet-another-pomodoro-timer/backend/blob/master/LICENSE)
